@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews Slideshow</title>
+  <style>
+    .slideshow-container {
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap; /* Ngăn chặn các slide xuống dòng */
+    }
+
+    .mySlides {
+      display: inline-block;
+      width: calc(100% / 3); /* Chia thành 3 phần bằng nhau cho mỗi slide */
+      box-sizing: border-box;
+      transition: transform 0.5s ease-in-out;
+      vertical-align: top; /* Hiển thị slide từ đầu hàng */
+    }
+
+    /* Optional: Style the customer review content */
+    .review-content {
+      text-align: center;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <!-- Customer Review Slides -->
+  <div class="mySlides">
+    <div class="review-content">
+      <p>Rất hài lòng với chất lượng! Dụng cụ trà đạo từ cửa hàng này không chỉ đẹp mắt mà còn chắc chắn, tạo cảm giác sang trọng khi sử dụng.</p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="review-content">
+      <p>Mua một bộ dụng cụ trà đạo tại đây và thật sự ấn tượng. Chất liệu cao cấp và thiết kế tinh tế. Đặc biệt, giúp tôi trải nghiệm trà đạo một cách tuyệt vời.</p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <div class="review-content">
+      <p>Đánh giá thứ ba ở đây. Nội dung đánh giá có thể được điền vào đây.</p>
+    </div>
+  </div>
+
+  <!-- Add more slides as needed -->
+
+</div>
+
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("mySlides");
+    
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.transform = "translateX(-" + slideIndex * 100 + "%)";
+    }
+
+    slideIndex = (slideIndex + 1) % slides.length;
+  }
+
+  // Set the interval for auto slideshow
+  setInterval(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+</script>
+
+</body>
+</html>
