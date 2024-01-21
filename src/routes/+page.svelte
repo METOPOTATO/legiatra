@@ -1,4 +1,5 @@
 <script>
+  import Report from '../components/home/Report.svelte';
   export let data;
 </script>
 
@@ -45,45 +46,7 @@
   
   </div>
   
-  <div class="report">
-    <h1>PHẢN HỒI CỦA KHÁCH HÀNG</h1>
-    <h5>CHÚNG TÔI TIN RẰNG TẤT CẢ CÁC KHÁCH HÀNG ĐỀU HÀI LÒNG VỀ SẢN PHẨM CỦA CHÚNG TÔI</h5>
-    <div class="profiles">
-      <div class="profile">
-        <img src="profile/2.png" alt="">
-        <div class="content">
-          <div class="rating"></div>
-          <div class="comment">
-            <p>Trà hảo hạng, đặc biệt thơm ngon, sét trà quà thì đẹp mắt, rất thẩm mỹ, trên cả tuyệt vời. Nhân viên chu đáo ,rất nhiệt tình. Giao hàng đến tận nhà, dịch vụ nhanh chóng. Tối rất ưng ý. Vote 5 ngàn sao!</p>
-          </div>
-          <div class="name"> Thái Hoàng / Khách hàng </div>
-        </div>
-      </div>
-
-      <div class="profile">
-        <img src="profile/2.png" alt="">
-        <div class="content">
-          <div class="rating"></div>
-          <div class="comment">
-            <p>Trà hảo hạng, đặc biệt thơm ngon, sét trà quà thì đẹp mắt, rất thẩm mỹ, trên cả tuyệt vời. Nhân viên chu đáo ,rất nhiệt tình. Giao hàng đến tận nhà, dịch vụ nhanh chóng. Tối rất ưng ý. Vote 5 ngàn sao!</p>
-          </div>
-          <div class="name"> Thái Hoàng / Khách hàng </div>
-        </div>
-      </div>
-
-      <div class="profile">
-        <img src="profile/2.png" alt="">
-        <div class="content">
-          <div class="rating"></div>
-          <div class="comment">
-            <p>Trà hảo hạng, đặc biệt thơm ngon, sét trà quà thì đẹp mắt, rất thẩm mỹ, trên cả tuyệt vời. Nhân viên chu đáo ,rất nhiệt tình. Giao hàng đến tận nhà, dịch vụ nhanh chóng. Tối rất ưng ý. Vote 5 ngàn sao!</p>
-          </div>
-          <div class="name"> Thái Hoàng / Khách hàng </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <Report></Report>
   
   <div class="stories">
     
@@ -154,73 +117,7 @@
     height: 1px solid rgb(175, 17, 17);
   }
 
-  /* report */
-  .report{
-    width: 70%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: rgb(149, 5, 5);
-    font-weight: 600;
-  }
-
-  .report h1{
-    font-size: 30px;
-    font-weight: 800;
-  }
-
-  .report h5{
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .report p{
-    font-weight: 300;
-  }
-
-  .report .profiles{
-    font-size: 10px;
-    color: black;
-
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .report .profiles .profile{
-    margin: 0px 20px 0px 20px;
-    padding: 10px 5px 0px 5px;
-    background-color: antiquewhite;
-    border: 3px solid rgb(175, 17, 17);
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* justify-items: center; */
-    align-items: center;
-
-    width: 300px;
-    height: auto;
-  }
-
-  .report .profiles .profile img{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-
-  .report .profiles .profile p{
-    font-size: 14px;
-  }
-
-  .report .profiles .profile .name{
-    font-size: 14px;
-  }
-
+  
 
 
   /* products */
@@ -320,21 +217,6 @@
     width: 100%;
   }
 
-  .report{
-    text-align: center;
-  }
-
-  .report .profiles{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .report .profiles .profile{
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 </style>
