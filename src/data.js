@@ -2,32 +2,62 @@ export const products = [
 	{ 
     id: '1',
 		name: 'Lục Bách Niên',
-		cost: '4.980.000',
-		img: '123.jpg'
+		originCost: '4.980.000',
+		cost: '4.780.000',
+		img: '123.jpg',
+		intro: '',
+		data1: ['1 hộp gỗ sang trọng', '1 hũ gốm Bát Tràng', '1 bánh trà 375g', '1 lì xì năm mới + thiệp giới thiệu trà'],
+		data2: 'Lục Bách Niên - là dòng trà Phổ Nhĩ - được mệnh danh là một trong thập đại danh trà và là dòng trà nổi tiếng là quý và vô cùng đắt đắt đỏ chuyên dùng để tiến cống vua chúa thời xưa. Giống chè cổ thụ hàng trăm năm tuổi mọc tự nhiên trên các vùng núi cao, khí hậu lạnh ở Tây Côn Lĩnh, Hà Giang. Lá trà được chế biến đặc biệt để kích thích quá trình lên men vi sinh vật, sau đó nghệ nhân sẽ đảo tay chảo gang lò củi truyền thống để tạo nên phẩm trà đặc biệt tốt cho sức khỏe và có hương vị thơm quyện đặc trưng.',
+		data3: ['Vị trà: Phổ Nhĩ thì là trà lên men nên vị sẽ chát và hơi ngái 1 chút, nước màu vàng đậm nhưng nếu người nhận biết thưởng trà thì đây lại là loại rất ngon thuộc hàng thượng phẩm và tốt cho sức khỏe ạ'],
 	},
   {
     id: '2',
 		name: 'Kim sơn Lão Shan',
-		cost: '3.260.000',
-		img: '1234.jpg'
+		originCost: '3.240.000',
+		cost: '2.840.000',
+		img: '1234.jpg',
+		intro: '',
+		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', ' 2 hũ gốm Bát Tràng', '398g trà Bạch Tiên', '1 lì xì năm mới + thiệp giới thiệu trà'],
+		data2: 'Kim Sơn Lão Shan là dòng trà Bạch Tiên búp cây trà rừng cổ thụ quý hiếm, chỉ sinh trưởng tự nhiên rải rác ở đỉnh Tây Côn Lĩnh và Chiêu Lầu Thi thuộc tỉnh Hà Giang, có độ cao trên 2000m, nơi mây mù quanh năm bao phủ. Bạch Trà Tiên cho thu hoạch 1 năm 1 lần vào mùa đông.',
+		data3: [
+			'Bạch Trà Tiên có mầm trà màu trắng là những chiếc lá non màu đỏ tím, búp to, dài, nhiều lông tuyết và hàm lượng cafein rất thấp',
+			'Màu nước trà: Có màu trắng và sáng trong, hơi phớt vàng nhẹ',
+			'Vị: Thơm nhã, ngọt nhẹ, thanh khiết, không chát, êm dịu, nhẹ nhàng',
+			'Hương: Mùi hương của núi rừng, mùi hương đặc biệt của dòng trà rừng'
+		],
 	},
   {
     id: '3',
 		name: 'Ô Long Phú Quý',
-		cost: '2.640.000',
-		img: '12345.jpg'
+		originCost: '2.640.000',
+		cost: '2.260.000',
+		img: '12345.jpg',
+		intro: '',
+		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '620g trà Ô Long Thượng Hạng', '1 lì xì năm mới + thiệp giới thiệu trà'],
+		data2: 'Trà Ô Long có nguồn gốc từ Tỉnh Lâm Đồng. Đây cũng là vùng sản xuất ra trà Ô Long ngon nhất Việt Nam, đặc biệt với những đồn điền trồng trà rộng lớn ở thôn Cầu Đất và thành phố Bảo Lộc, nằm ở độ cao trên 900m, khí hậu mát mẻ quanh năm, đất đai trù phú cũng là nơi cho ra những phẩm trà ngon thượng hạng.',
+		data3: ['Vị trà: Trà Ô long được vo thành viên tròn nhỏ màu xanh đen, mùi hương dịu nhẹ tự nhiên,vị hậu ngọt, đặc biệt pha được nhiều lần nước (8-10 lần).'],
 	},
   {
     id: '4',
 		name: 'Bạch Ngọc Trà',
-		cost: '2.390.00',
-		img: '123456.jpg'
+		originCost: '2.390.000',
+		cost: '1.990.000',
+		img: '123456.jpg',
+		intro: '',
+		data1: ['1 túi xách', '1 hộp gỗ', '2 hũ gốm đựng trà', '1 lì xì năm mới', 'Thiệp giới thiệu trà'],
+		data2: 'Trà Shan Tuyết là dòng trà sản lượng cực kỳ ít và quý hiếm thuộc vùng núi Tà Xùa - Sơn La. Trà bao gồm những búp trà non, mùa xuân trà được thu hái và chế biến theo phương thức truyền thống, chọn lọc và làm khô, héo ở mức nhiệt độ vừa phải. Sau khi chế biến lá trà khô thẳng có màu trắng bạc.Điểm nhấn của trà Shan Tuyết Tà Xùa là vị trà nhẹ, ngọt dịu, hậu vị tốt và ngọt hậu đem đến cho người thưởng thức cảm giác cuốn hút và thư giãn.',
+		data3: ['Loại trà: Trà shan tuyết 1 tôm 2 lá', 'Xuất sứ trà: Tà Xùa - Sơn La', 'Trọng lượng trà trong hũ: 400gr'],
 	},
   {
     id: '5',
 		name: 'Bát Đại Shan',
-		cost: '2.750.000',
-		img: '12.jpg'
+		originCost: '2.750.000',
+		cost: ' 2.650.000',
+		img: '12.jpg',
+		intro: '',
+		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '400g trà Shan Tuyết cổ thụ xuất xứ từ Tây Côn Lĩnh - Hà Giang', '1 lì xì năm mới + thiệp giới thiệu trà'],
+		data2: 'Bát Đại Shan là một phẩm trà ngon được xếp vào hàng thượng trà, quý và hiếm ở Việt Nam. Bát Đại Shan được thu hái từ những cây trà cổ thụ trong rừng sâu, quanh năm bao phủ bởi mây và sương mờ trên núi Bát Đại Sơn cao nguyên đá thuộc dãy Tây Côn Lĩnh – Hà Giang. Trà cổ Bát Đại Shan có hương trầm mạnh mẽ cuốn hút, độc đáo với màu vàng óng cùng dư vị thanh ngọt hậu.Điểm đặc biệt của Bát Đại Shan là mùi mạnh mẽ và vị êm ngọt quyến rũ, bám rất lâu ở cuống họng và hơi thở.Phẩm trà Bát Đại Shan có thể thưởng thức tới 15 lần nước, mỗi tầng nước là dư vị khác nhau, chắc hẳn quý khách sẽ không thể quên được khi uống ngụm đầu tiên với vị khác lạ và ngọt thanh của trà cổ thụ.',
+		data3: '',
 	},
 
 ];

@@ -3,7 +3,7 @@
 </script>
 
 <div class="products">
-  <h1>BỘ SƯU TẬP QUÀ TẾT CAO CẤP 2023 TỪ LIÊN HOA TRÀ</h1>
+  <h1>BỘ SƯU TẬP QUÀ TẾT CAO CẤP 2023 TỪ LÊ GIA TRÀ</h1>
   <h5>TẾT TRAO QUÀ SỨC KHỎE – XUÂN KHỞI SẮC THỊNH VƯỢNG</h5>
   <div class="cards">
     {#each data.products as p}

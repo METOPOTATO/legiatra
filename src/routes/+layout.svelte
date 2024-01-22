@@ -12,10 +12,10 @@
 
 <header>
   <div class="navbar navbar-expand-lg navbar-light ">
-    <div class="icon"><img src="icons/abc.png" alt="icons/abc.png"></div>
+    <div class="icon"><img src="/abc.png" alt="iconimg/abc.png"></div>
     <div class="items">
       <button class="menu" id="menu" on:click={displayMenu}>
-        <img src="/icons/1.svg" alt="">
+        <img src="/1.svg" alt="">
       </button>
         <ul class="navbar-nav" class:display={display}  id="myLinks">
           <li class="nav-item">
@@ -71,7 +71,7 @@
   </div>
   <hr>
   <p>
-    Copyright © 2018 - Bản quyền thuộc về Liên Hoa Trà
+    Copyright © 2018 - Bản quyền thuộc về Lê Gia Trà
   </p>
 
 </footer>
@@ -148,9 +148,6 @@
     margin-bottom: 15px;
   }
 
-  footer .colx{
-    border-left: 1px solid #d6d6d6;
-  }
   footer .col1{
     width: 30%
   }
