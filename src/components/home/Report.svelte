@@ -16,15 +16,15 @@
       name: "Anh Cường"
     },
     { 
-      img: "profile/a1.png",
-      content: "Thích thú với sự đa dạng của sản phẩm. Họ có một loạt các dụng cụ trà đạo với giá cả phải chăng. Rất hài lòng với sự lựa chọn của mình.",
-      name: "Anh Ngọc Hải"
-    },
-    { 
       img: "profile/a2.png",
-      content: "Đặt hàng trực tuyến và nhận được sự hỗ trợ tận tình từ đội ngũ khách hàng. Dụng cụ trà đạo tôi mua đẹp không tưởng và thực sự đáp ứng mong đợi",
-      name: "Anh Hải Nam"
+      content: "Thích thú với sự đa dạng của sản phẩm. Họ có một loạt các dụng cụ trà đạo với giá cả phải chăng. Rất hài lòng với sự lựa chọn của mình.",
+      name: "Anh Park"
     },
+    // { 
+    //   img: "profile/a3.png",
+    //   content: "Đặt hàng trực tuyến và nhận được sự hỗ trợ tận tình từ đội ngũ khách hàng. Dụng cụ trà đạo tôi mua đẹp không tưởng và thực sự đáp ứng mong đợi",
+    //   name: "Anh Hải Nam"
+    // },
     { 
       img: "profile/a4.png",
       content: "Không chỉ cung cấp các sản phẩm chất lượng, mà còn có các hướng dẫn sử dụng chi tiết. Điều này giúp tôi, người mới bắt đầu với trà đạo, nắm bắt nhanh chóng.",
@@ -33,7 +33,7 @@
     { 
       img: "profile/a5.png",
       content: "Dụng cụ trà đạo từ cửa hàng này thực sự nâng cao trải nghiệm trà của tôi. Rất ấn tượng với sự chú ý đến chi tiết và chất lượng sản phẩm.",
-      name: "Anh Park"
+      name: "Anh Ngọc Hải"
     },
     { 
       img: "profile/a6.png",

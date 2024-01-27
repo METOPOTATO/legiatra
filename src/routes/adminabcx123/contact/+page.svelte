@@ -7,7 +7,7 @@
   let listData = [];
   onMount(async() =>{
     try{
-      const response = await fetch('http://127.0.0.1:8000/contact')
+      const response = await fetch('https://api.legiatra.com/contact')
       const data = await response.json();
       listData = data;
     }catch{
@@ -17,7 +17,7 @@
 
   // @ts-ignore
   async function update(id){
-    const res = await fetch('http://127.0.0.1:8000/contact', {
+    const res = await fetch('https://api.legiatra.com/contact', {
 			  method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

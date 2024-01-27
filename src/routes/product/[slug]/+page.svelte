@@ -14,7 +14,7 @@
     const phoneRegex = /^(0|\+84)\d{9,10}$/;
     isValid = phoneRegex.test(phoneNumber);
     if (isValid){
-      const res = await fetch('http://127.0.0.1:8000/contact', {
+      const res = await fetch('https://api.legiatra.com/contact', {
 			  method: 'POST',
         headers: {
           'Content-Type': 'application/json',
