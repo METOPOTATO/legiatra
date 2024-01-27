@@ -1,5 +1,44 @@
 <script>
+  import { goto } from '$app/navigation';
+
   export let data;
+
+  let pcount = 0;
+
+  let result = null;
+
+  let phoneNumber = '';
+  let isValid = false;
+
+  async function sendPhonenumber(){
+    const phoneRegex = /^(0|\+84)\d{9,10}$/;
+    isValid = phoneRegex.test(phoneNumber);
+    if (isValid){
+      const res = await fetch('http://127.0.0.1:8000/contact', {
+			  method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          'phone': phoneNumber
+        })
+      })
+      
+      const json = await res.json()
+
+      if (json.result === "ok"){
+        alert('Đã gửi thành công, chúng mình sẽ gọi lại cho bạn sớm nhất !')
+        phoneNumber = '';
+      }
+    }
+    else{
+      console.log('Số điện thoại không hợp lệ!')
+    }
+	}
+
+  function toOrderDetail(){
+    goto(`/order?product=${data.p.id}&qty=${pcount}`)
+  }
 </script>
 
 <h1 class="title">SẢN PHẨM TRÀ CHẤT LƯỢNG CAO</h1>
@@ -16,10 +55,20 @@
       </div>
       
       <div class="order">
-
+        <div class="value">
+          <button on:click={()=>{ pcount > 0? pcount--: pcount ==0 }}>-</button>
+          <span>{pcount}</span>
+          <button on:click={()=>{pcount ++}}>+</button>
+        </div>
+        <div>
+          <button class="btn-order" on:click={toOrderDetail}>Đặt hàng ngay</button>
+        </div>
+         
       </div>
       <div class="consult">
-
+        <p>Nhập số điện thoại để chúng mình tư vấn nhé!</p>
+        <input type="text" placeholder="Nhập số điện thoại" bind:value={phoneNumber} > 
+        <button on:click={sendPhonenumber}>Gửi</button>
       </div>
     </div>
     <div class="contact">
@@ -116,6 +165,73 @@
     font-weight: 600;
     text-decoration: underline;
     color: brown;
+  }
+
+  .content .product .detail .consult{
+    margin: 20px 20px 20px 0;
+    padding: 20px;
+    border: 3px solid rgb(216, 21, 21);
+  }
+
+  .content .product .detail .consult p{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .content .product .detail .consult input{
+    height: 40px;
+    border: 2px solid rgb(216, 21, 21);
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .content .product .detail .consult button{
+    height: 40px;
+    width: 60px;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(216, 21, 21);
+    font-size: 18px;
+    
+  }
+
+  .content .product .detail .order .value{
+    height: 40px;
+    width: 200px;
+    background-color: #b0dbfc;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+    color: rgb(131, 75, 75);
+    border: 1px solid rgb(132, 160, 252);
+    float: left;
+  }  
+
+  content .product .detail .order .value::after{
+    clear: both;
+  }
+
+  .content .product .detail .order .btn-order{
+    height: 40px;
+    width: 140px;
+    border: none;
+    margin: auto 20px auto 20px;
+    background-color: #b0dbfc;
+    border: 2px solid #0866FF;
+  }
+  
+  .content .product .detail .order .value button{
+    background: #0091ff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 15px 0 15px;
+    height: 100%;
+    color: #ffffff;
+    
   }
 
   .contact{
