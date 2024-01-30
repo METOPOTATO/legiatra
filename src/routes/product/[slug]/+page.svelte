@@ -140,7 +140,7 @@
   }
 
   .content .product .detail{
-    margin-left: -30px;
+    /* margin-left: -30px; */
   }
 
   .content .product .detail .name{
@@ -198,15 +198,15 @@
   .content .product .detail .order .value{
     height: 40px;
     width: 200px;
-    background-color: #b0dbfc;
+    background-color: #ffc37e;
     display: flex;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
     align-self: center;
     font-size: 25px;
-    color: rgb(131, 75, 75);
-    border: 1px solid rgb(132, 160, 252);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(216, 21, 21);
     float: left;
   }  
 
@@ -219,12 +219,12 @@
     width: 140px;
     border: none;
     margin: auto 20px auto 20px;
-    background-color: #b0dbfc;
-    border: 2px solid #0866FF;
+    background-color: #da9965;
+    border: 2px solid #c03c14;
   }
   
   .content .product .detail .order .value button{
-    background: #0091ff;
+    background: #cf7123;
     border: none;
     font-size: 20px;
     font-weight: 600;
@@ -295,6 +295,40 @@
   .content .data .data3 ul li{
     list-style-type: none;
   }
+
+
+@media screen and (max-width: 1200px){
+  .content{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  .content .product .detail .name{
+    font-size: 30px;
+  }
+
+  .content .product .detail .cost{
+    font-size: 20px;
+  }
+
+  .content .product .detail .consult button{
+    height: 35px;
+  }
+
+  .content .product .detail .order .btn-order{
+    height: 35px;
+    width: 120px;
+  }
+
+  .content .product .detail .order .value{
+    height: 35px;
+  }
+
+  .content .product .detail{
+    margin-left: 20px;
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   .content{
