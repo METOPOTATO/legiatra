@@ -297,35 +297,71 @@
   }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
   .content{
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
   }
   .content .product .detail .name{
-    font-size: 30px;
+    font-size: 28px;
+  }
+
+  .content .product .detail .origin-cost{
+    font-size: 16px;
   }
 
   .content .product .detail .cost{
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .content .product .detail .consult button{
-    height: 35px;
+    height: 32px;
   }
 
   .content .product .detail .order .btn-order{
-    height: 35px;
-    width: 120px;
+    height: 32px;
+    width: 110px;
+    font-size: 15px;
   }
 
   .content .product .detail .order .value{
-    height: 35px;
+    height: 32px;
+    width: 180px;
   }
 
   .content .product .detail{
     margin-left: 20px;
+  }
+
+  .content .product .detail .consult p{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .content .product .detail .consult input{
+    height: 35px;
+    width: 200px;
+    border: 2px solid rgb(216, 21, 21);
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .content .product .detail .consult{
+    margin: 20px 20px 20px 0;
+    padding: 20px;
+    border: 3px solid rgb(216, 21, 21);
+  }
+
+  .content .product .detail .consult button{
+    height: 35px;
+    width: 60px;
+    border: none;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(216, 21, 21);
+    font-size: 18px;
+    
   }
 }
 
