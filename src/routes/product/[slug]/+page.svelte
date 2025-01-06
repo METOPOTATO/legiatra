@@ -45,7 +45,7 @@
 <div class="content">
   <div class="product">
     <div class="img">
-      <img src={data.p.img} alt="img">
+      <img src={data.p.img} alt="img" style="width: 410px; height: 270px;">
     </div>
     <div class="detail">
       <p class="name">Sét Trà: {data.p.name}</p>
