@@ -4,7 +4,7 @@
 </script>
 
 <div class="banner">
-  <img src="header2.jpg" alt="">
+  <img src="banner2.png" alt="">
 </div>
 <div class="content">  
   <div class="intro">
@@ -64,6 +64,7 @@
 
   .banner img{
     width: 100%;
+    height: 700px;
   }
 
   /* intro */
