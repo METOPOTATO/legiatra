@@ -66,7 +66,7 @@ export const products = [
 		cost: '690.000',
 		img: 'dts.jpeg',
 		intro: '',
-		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '400g trà Shan Tuyết cổ thụ xuất xứ từ Tây Côn Lĩnh - Hà Giang', 'thiệp giới thiệu trà'],
+		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '400g trà', 'thiệp giới thiệu trà'],
 		data2: 'Đại Tuyết Shan là một dòng trà shan tuyết cổ hàng trăm năm tuổi được thai nghén trong sương lạnh và mây mù trên dãy tà xùa-sơn la. Chính vì vậy, trà là tinh phẩm và là dòng trà sản lượng rất ít do sự khó khăn trong việc thu hái và chế biến.Qua bàn tay của các nghệ nhân làm trà người dân tộc Tày, Mông, Dao trà được chế biến thủ công 100% qua nhiều công đoạn công phu đem đến một phẩm trà thượng hạng vang danh Trà Việt.',
 		data3: [
 			'CÁCH PHA ĐẠI TUYẾT SHAN NGON TUYỆT',
@@ -84,7 +84,7 @@ export const products = [
 		cost: '1.380.000',
 		img: 'btpq_.jpeg',
 		intro: '',
-		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '400g trà Shan Tuyết cổ thụ xuất xứ từ Tây Côn Lĩnh - Hà Giang', 'thiệp giới thiệu trà'],
+		data1: ['1 túi xách sang trọng', '1 hộp gỗ ', '2 hũ gốm Bát Tràng', '400g trà', 'thiệp giới thiệu trà'],
 		data2: 'Bạch Trà Phú Quý là một phẩm trà ngon được xếp vào hàng thượng trà, cực kì quý giá và hiếm ở Việt Nam. Trên độ cao hơn 2.800 m so với mực nước biển, là một trong những đỉnh núi cao nhất Việt Nam, thuộc huyện Bắc Yên (Sơn La), Trà được thu hái từ những mầm trà Shan Tuyết cổ thụ hàng trăm năm tuổi, mỗi năm chỉ thu hái 1 lần vì vậy số lượng trà rất hạn chế và quý hiếm. Trà là trà rừng mọc tự nhiên, không phân bón hóa chất, không thuốc trừ sâu.',
 		data3: [
 			'CÁCH PHA BẠCH TRÀ PHÚ QUÝ NGON TUYỆT HẢO:',
