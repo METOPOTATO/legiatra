@@ -8,6 +8,7 @@ export const products = [
 		intro: '',
 		data1: ['1 túi xách sang trọng', '1 hộp giấy cứng cao cấp', '2 hũ gốm đựng trà ', '400g trà Shan Tuyết', '1 thiệp giới thiệu trà'],
 		data2: 'Đại Tuyết Shan là một dòng trà shan tuyết cổ trên 100  năm tuổi được thai nghén trong sương lạnh và mây mù trên dãy Tà Xùa - Sơn La. Chính vì vậy, trà là tinh phẩm và là dòng trà sản lượng rất ít do sự khó khăn trong việc thu hái và chế biến.Qua bàn tay của các nghệ nhân làm trà người dân tộc Mông, trà được chế biến thủ công 100% qua nhiều công đoạn công phu đem đến một phẩm trà thượng hạng vang danh Trà Việt.',
+		data3: []
 	},
   {
     id: '2',
@@ -42,7 +43,7 @@ export const products = [
 		intro: '',
 		data1: ['1 túi xách sang trọng', '1 hộp gỗ cao cấp', '2 hũ gốm đựng trà', '400g trà Shan Tuyết cổ thụ', '1 thiệp giới thiệu trà'],
 		data2: 'Đệ Nhất Trà Shan là một phẩm trà ngon được xếp vào hàng thượng trà, cực kì quý giá và hiếm ở Việt Nam. Trên độ cao hơn 2.800 m so với mực nước biển, là một trong những đỉnh núi cao nhất Việt Nam, thuộc huyện Bắc Yên (Sơn La). Trà cổ Đệ Nhất Trà Shan có hương trầm mạnh mẽ cuốn hút, độc đáo với màu vàng óng cùng dư vị thanh ngọt hậu. Điểm đặc biệt của loại trà này là mùi mạnh mẽ và vị êm ngọt quyến rũ, bám rất lâu ở cuống họng và hơi thở. Phẩm trà Đệ Nhất Trà Shan có thể thưởng thức tới 15 lần nước, mỗi tầng nước là dư vị khác nhau, chắc hẳn quý khách sẽ không thể quên được khi uống ngụm đầu tiên với vị khác lạ và ngọt thanh của trà cổ thụ.',
-		
+		data3: []
 	},
   {
     id: '5',
