@@ -1,6 +1,6 @@
 <script>
   import { goto } from '$app/navigation';
-
+  import ImageSlider from '../../../components/ImageSlider.svelte';
   export let data;
 
   let pcount = 0;
@@ -44,8 +44,11 @@
 <h1 class="title">SẢN PHẨM TRÀ CHẤT LƯỢNG CAO</h1>
 <div class="content">
   <div class="product">
-    <div class="img">
+    <!-- <div class="img">
       <img src={data.p.img} alt="img" style="width: 410px; height: 270px;">
+    </div> -->
+    <div class=img>
+      <ImageSlider images={data.p.images}/>
     </div>
     <div class="detail">
       <p class="name">Sét Trà: {data.p.name}</p>
