@@ -30,7 +30,7 @@
       {#each data.products as p}
         <div class="card">
           <a href="/product/{p.id}">
-            <img src="product/{p.img}" alt="" style="width: 310px; height: 206px;">
+            <img src="product/{p.img}" alt="" style="width: 310px; height: 250px;">
             <p class="category">SÉT TRÀ BIẾU</p>
             <hr>
             <p class="name">{p.name}</p>

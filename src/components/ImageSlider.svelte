@@ -38,18 +38,25 @@
     position: relative;
     width: 410px;
     height: 270px;
-    max-width: 600px;
-    margin: auto;
+    /* max-width: 600px; */
+    /* margin: auto; */
     overflow: hidden;
-    object-fit: scale-down ;
+    border-radius: 12px;
   }
 
   .slide {
     width: 100%;
     height: 100%;
-
-    border-radius: 12px;
+    object-fit: contain ;
+    
   }
+  @media (max-width: 480px) {
+  .slider {
+    width: 100%;
+    aspect-ratio: 400 / 270; /* giữ tỷ lệ */
+    height: auto;
+  }
+}
 
   .arrow {
     position: absolute;
