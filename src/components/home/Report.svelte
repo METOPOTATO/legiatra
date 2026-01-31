@@ -3,22 +3,26 @@
     { 
       img: "profile/a.png",
       content: "Rất hài lòng với chất lượng! Dụng cụ trà đạo từ cửa hàng này không chỉ đẹp mắt mà còn chắc chắn, tạo cảm giác sang trọng khi sử dụng.",
-      name: "Chị Minh Ngọc"
+      name: "Chị Minh Ngọc",
+      rating: 5
     },
     { 
       img: "profile/2.png",
       content: "Mua một bộ dụng cụ trà đạo tại đây và thật sự ấn tượng. Chất liệu cao cấp và thiết kế tinh tế. Đặc biệt, giúp tôi trải nghiệm trà đạo một cách tuyệt vời",
-      name: "Chị Thanh Thảo"
+      name: "Chị Thanh Thảo",
+      rating: 5
     },
     { 
       img: "profile/3.jpg",
       content: "Mua một bộ dụng cụ trà đạo tại đây và thật sự ấn tượng. Chất liệu cao cấp và thiết kế tinh tế. Đặc biệt, giúp tôi trải nghiệm trà đạo một cách tuyệt vời",
-      name: "Anh Cường"
+      name: "Anh Cường" ,
+      rating: 4
     },
     { 
       img: "profile/a2.png",
       content: "Thích thú với sự đa dạng của sản phẩm. Họ có một loạt các dụng cụ trà đạo với giá cả phải chăng. Rất hài lòng với sự lựa chọn của mình.",
-      name: "Anh Park"
+      name: "Anh Park",   
+      rating: 5
     },
     // { 
     //   img: "profile/a3.png",
@@ -28,22 +32,26 @@
     { 
       img: "profile/a4.png",
       content: "Không chỉ cung cấp các sản phẩm chất lượng, mà còn có các hướng dẫn sử dụng chi tiết. Điều này giúp tôi, người mới bắt đầu với trà đạo, nắm bắt nhanh chóng.",
-      name: "Anh Đình Hùng"
+      name: "Anh Đình Hùng",
+      rating: 5
     },
     { 
       img: "profile/a5.png",
       content: "Dụng cụ trà đạo từ cửa hàng này thực sự nâng cao trải nghiệm trà của tôi. Rất ấn tượng với sự chú ý đến chi tiết và chất lượng sản phẩm.",
-      name: "Anh Ngọc Hải"
+      name: "Anh Ngọc Hải",
+      rating: 4.5
     },
     { 
       img: "profile/a6.png",
       content: "Mua một bộ dụng cụ trà đạo tại đây và thật sự ấn tượng. Chất liệu cao cấp và thiết kế tinh tế. Đặc biệt, giúp tôi trải nghiệm trà đạo một cách tuyệt vời",
-      name: "Chị Cẩm Vân"
+      name: "Chị Cẩm Vân",
+      rating: 5
     },
     { 
       img: "profile/a7.png",
       content: "Mua một bộ dụng cụ trà đạo tại đây và thật sự ấn tượng. Chất liệu cao cấp và thiết kế tinh tế. Đặc biệt, giúp tôi trải nghiệm trà đạo một cách tuyệt vời",
-      name: "Chị Tú"
+      name: "Chị Tú",
+      rating: 4.5
     },
   ];
 
@@ -60,9 +68,14 @@
       <div class="profile">
         <img src={data.img} alt="img" />
         <div class="content">
-          <div class="rating"></div>
           <div class="comment">
             <p>{data.content}</p>
+          </div>
+          <div class="rating">
+            {#each Array(5) as _, i}
+              <span class:active={i + 1 <= Math.round(data.rating)}>★</span>
+            {/each}
+            <span class="score">{data.rating}/5</span>
           </div>
           <div class="name">{data.name} / Khách hàng</div>
         </div>
@@ -144,7 +157,31 @@
   .report .profiles .profile .name {
     font-size: 14px;
     text-align: center;
+    padding-bottom: 10px;
   }
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .rating span {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .rating span.active {
+    color: #ffc107; /* màu sao vàng */
+  }
+
+  .rating .score {
+    font-size: 12px;
+    color: #666;
+    margin-left: 4px;
+  }
+
 
   @media screen and (max-width: 800px) {
     .report {
@@ -161,6 +198,10 @@
     .report .profiles .profile {
       width: 100%;
       margin-bottom: 20px;
+    }
+
+    .report{
+      width: 100%;
     }
   }
 </style>

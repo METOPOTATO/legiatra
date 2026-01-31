@@ -218,6 +218,10 @@
     width: 100%;
   }
 
+  .products .cards{
+
+    width: 100%;
+  }
 }
 
 </style>
